@@ -1,6 +1,6 @@
 ---
 date: "2020-04-14T05:00:00.000Z"
-description: Why I am maintaing this blog
+description: Why I am maintaining this blog
 tags:
   - On Writing
 ---
