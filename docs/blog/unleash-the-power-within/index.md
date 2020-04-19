@@ -1,10 +1,11 @@
 ---
-title: Why I want to attend Unleash the Power Within 
 date: "2018-09-09T05:00:00.000Z"
 description: Brief writeup on what I hope to achieve by attending UPW
-tags: 
+tags:
   - Personal Development
 ---
+
+# Why I want to attend Unleash the Power Within
 
 #### Backstory
 
@@ -22,6 +23,6 @@ A big turning point in my life was when I met Mr. Adnan Jalali. He was a former 
 
 I have a few limiting beliefs that I want to get rid of. Chief amongst them being scared of *taking complete ownership*. I had started an e-commerce startup with a few friends almost 3 years ago. That experience though immensely educational left with me with a few scars. That was the first time I had complete ownership of my career. This was the first time the buck truly stopped with me. And it was amazing and terrifying. The failure of the startup, I am ashamed to admit, has left me with a strong fear of failure and complete ownership. I want to be rid of this fear.
 
-#### How will attending UPW help you at Scalefactor 
+#### How will attending UPW help you at Scalefactor
 
 One of my goals at Scalefactor is to become a Senior Software Engineer. I know that I have a long way to go but I am confident that I will get there. I am confident in my technical ability to reach that goal. What is holding me back is my fear of taking ownership of difficult projects that put me outside of my comfort zone. My supervisor has been doing a great job of pushing me in that direction. However, I feel that fear is still holding me from giving it my all. I know for sure I am not performing even close to my 100 percent. After running my startup I know what my 100 percent looks like and I want to get back to doing that. I truly feel that UPW is going to allow me to reach that goal of being a Senior Software Developer a lot quicker.

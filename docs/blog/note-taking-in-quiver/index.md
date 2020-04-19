@@ -1,21 +1,22 @@
 ---
-title: Note taking in Quiver
 date: "2020-04-04T15:34:24.481Z"
 description: My experience using Quiver for writing and note taking
-tags: 
+tags:
   - Writing Tips
   - Quiver
 ---
 
-I recently started using [Quiver](https://happenapps.com) to do my normal note-taking. I had already tried a whole gamut of other apps including Evernote, Notion, and Boostnote. I never really got comfortable using Evernote, to be honest. It never went beyond scribbling a note here, a thought there. 
+# Note taking in Quiver
+
+I recently started using [Quiver](https://happenapps.com) to do my normal note-taking. I had already tried a whole gamut of other apps including Evernote, Notion, and Boostnote. I never really got comfortable using Evernote, to be honest. It never went beyond scribbling a note here, a thought there.
 
 #### Notion
 
-I used Notion for a while and I tried to make it work for me. However, the biggest downside was that the Mac and iPhone app just didn't feel that snappy. It just felt that it was a few milliseconds too slow. To be fair, I was expecting it to boot at the speed of the native Notes app in Mac or iPhone which is not a reasonable comparision. Notion is amazing and provides a groundbreaking approach to taking notes. Furthermore, with the upcoming API support, it could even act as a Headless CMS for this blog. Alas, I couldn't wait that long. 
+I used Notion for a while and I tried to make it work for me. However, the biggest downside was that the Mac and iPhone app just didn't feel that snappy. It just felt that it was a few milliseconds too slow. To be fair, I was expecting it to boot at the speed of the native Notes app in Mac or iPhone which is not a reasonable comparision. Notion is amazing and provides a groundbreaking approach to taking notes. Furthermore, with the upcoming API support, it could even act as a Headless CMS for this blog. Alas, I couldn't wait that long.
 
 #### Boostnote
 
-Boostnote came *very* close. I liked Boostnote 1.0 because it had great Vim key binding support. However, with [Boostnote 2.0](https://github.com/BoostIO/BoostNote.next) they introduced [pouchdb](https://pouchdb.com/) as the main data store. Previously, the filesystem was being used to store the files. They have good reasons for switching as explained in this [issue](https://github.com/BoostIO/Boostnote.next/issues/67#issue-483763503): 
+Boostnote came *very* close. I liked Boostnote 1.0 because it had great Vim key binding support. However, with [Boostnote 2.0](https://github.com/BoostIO/BoostNote.next) they introduced [pouchdb](https://pouchdb.com/) as the main data store. Previously, the filesystem was being used to store the files. They have good reasons for switching as explained in this [issue](https://github.com/BoostIO/Boostnote.next/issues/67#issue-483763503):
 >  We've learned using the file system is quite dangerous while maintaining the current Boostnote project. Most of the problems are caused by the differences between OSs.
 
 However, I share the sentiment of one [commenter](https://github.com/BoostIO/Boostnote.next/issues/67#issuecomment-532678745) in that I preferred files being saved transparently to the filesystem where I can sync them to Dropbox/Google Drive. Boostnote 2.0 provides a cloud syncing functionality but I much rather use iCloud.

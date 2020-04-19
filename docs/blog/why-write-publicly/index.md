@@ -1,16 +1,17 @@
 ---
-title: Why I write publicly
-date: "2020-04-14T16:32:06.181Z"
+date: "2020-04-14T05:00:00.000Z"
 description: Why I am maintaing this blog
-tags: 
+tags:
   - On Writing
 ---
 
+# Why I write publicly
+
 #### Who is the primary audience?
 
-Me. I believe I am the primary audience for this blog. Yes, it is out in public and I hope others find it useful (after all I am sharing things I found beneficial) but this primarily for me. 
+Me. I believe I am the primary audience for this blog. Yes, it is out in public and I hope others find it useful (after all I am sharing things I found beneficial) but this primarily for me.
 
-Then the next logical question is why is public then? Why not just leave it in my private notes. Here are two reasons why: 
+Then the next logical question is why is public then? Why not just leave it in my private notes. Here are two reasons why:
 
 ###### Higher Standard of Quality
 

@@ -1,15 +1,16 @@
 ---
-title: Vim tip for Quiver
 date: "2020-04-05T16:19:41.108Z"
 description: Enable navigating around wrapped lines using vim commands in Quiver
-tags: 
+tags:
   - Writing
-  - Quiver 
+  - Quiver
 ---
 
-#### Navigating wrapped lines using Vim 
+# Vim tip for Quiver
 
-I was finding myself struggling to navigate between long wrapped lines in Quiver using Vim's `j` and `k` commands. Text, as opposed to code, can have long physical lines. I could break them up by add a line break after every period but that feels strange. While perusing the Quiver wiki I landed on the [Vim section](https://github.com/HappenApps/Quiver/wiki/Vim). There was my answer: 
+#### Navigating wrapped lines using Vim
+
+I was finding myself struggling to navigate between long wrapped lines in Quiver using Vim's `j` and `k` commands. Text, as opposed to code, can have long physical lines. I could break them up by add a line break after every period but that feels strange. While perusing the Quiver wiki I landed on the [Vim section](https://github.com/HappenApps/Quiver/wiki/Vim). There was my answer:
 > Quiver has line wrapping turned on by default (src). To get j and k working normally, either use `:set nowrap` or `:map j gj` and `:map k gk`.
 
 I applied the keymap and it worked beautifully. I also learned about Vim's `gj` option for the first time. Here is the [documenation](https://vim.fandom.com/wiki/Move_cursor_by_display_lines_when_wrapping) if you are interested.
@@ -31,7 +32,7 @@ However, I wasn't done yet. I ran `./Quiver.sh` again and got the same permissio
 
 Here is the full applescript:
 ```
-tell application "Quiver" 
+tell application "Quiver"
     activate
 end tell
 
@@ -58,7 +59,7 @@ end tell
 
 #### Handy Alias
 
-The last step was to add an alias so I don't have to remember the full file path to the script. I added this to my `.zshrc`: 
+The last step was to add an alias so I don't have to remember the full file path to the script. I added this to my `.zshrc`:
 ```shell
 # Quiver
 alias quiver='/Users/jibrankalia/dotfiles/quiver/Quiver.sh'
