@@ -14,4 +14,12 @@ module.exports = {
     ['meta', { name: "msapplication-config", content: "/assets/favicons/browserconfig.xml"}],
     ['meta', { name: "theme-color", content: "#ffffff"}],
   ],
+  themeConfig: {
+    nav: [
+      // Normal Links
+      { text: 'Blog', link: '/blog/' },
+      { text: 'ExoBrain', link: '/knowledge/' },
+      { text: 'Github', link: 'https://github.com/jibrankalia' },
+    ]
+  }
 }
