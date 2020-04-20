@@ -1,4 +1,4 @@
-## Blog
+# Blog
 
 My writings on software and life.
 

@@ -12,7 +12,7 @@ tags:
 
 # Background
 
-After checking out Paul Copplestone's [beutiful website](https://paul.copplest.one/) I decided I wanted to build my own blog using [VuePress](https://vuepress.vuejs.org/) as well.
+After checking out Paul Copplestone's [awesome website](https://paul.copplest.one/), I decided I wanted to build my own blog using [VuePress](https://vuepress.vuejs.org/) as well.
 
 
 ## Installing VuePress
