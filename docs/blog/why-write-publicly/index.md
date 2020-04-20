@@ -2,6 +2,7 @@
 title: Why I write publicly
 date: "2020-04-14T05:00:00.000Z"
 description: Why I am maintaining this blog
+state: published
 tags:
   - On Writing
 ---
