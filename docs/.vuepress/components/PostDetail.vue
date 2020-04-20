@@ -2,7 +2,7 @@
   <div>
     <div class="last-updated">{{updatedAt}}</div>
     <h3>
-      <router-link :to="post.path">{{post.title}} </router-link>
+      <router-link :to="post.path">{{title}} </router-link>
     </h3>
     <p>
       {{description}}
@@ -15,11 +15,14 @@
 export default {
   props: { post: Object },
   computed: {
+    title() {
+      return this.post.frontmatter.title;
+    },
     description() {
-      return this.post.frontmatter.description
+      return this.post.frontmatter.description;
     },
     updatedAt() {
-      return new Date(this.post.frontmatter.date).toDateString()
+      return new Date(this.post.frontmatter.date).toDateString();
     },
   },
 }
