@@ -10,11 +10,12 @@ export default {
   computed: {
     posts() {
       const path = this.$page.path
-      return this.$site.pages
+      const posts = this.$site.pages
         .filter(p => p.path && p.path.startsWith(path) && p.path !== path)
         .sort((a, b) => {
-          return new Date(a.frontmatter.date) < new Date(b.frontmatter.date)
+          return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
         });
+      return posts;
     }
   }
 }
