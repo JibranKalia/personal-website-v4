@@ -8,5 +8,8 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
