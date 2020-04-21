@@ -100,22 +100,23 @@ After that, I put filled out the `.vuepress/index.md` with some personal details
 ## Favicons
 
 I then wanted to add favicons to my website. I had made a simple one using this [Favicon Generator](https://favicon.io/).
-At the the root of the repository I created the appropriate file for favicons using `mkdir -p docs/.vuepress/assets/favicon`. I then copied the favicons into that folder. Finally, I updated the `.vuepress/config.js` file with the path to the favicons:
+At the the root of the repository I created the appropriate file for favicons using `mkdir -p docs/.vuepress/public`. I then copied the favicons into that folder. Finally, I updated the `.vuepress/config.js` file with the path to the favicons:
+
 ```js
 // docs/.vuepress/config.js
 
 head: [
-  ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/assets/favicons/apple-touch-icon.png"}],
-  ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/favicons/favicon-32x32.png"}],
-  ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/favicons/favicon-16x16.png"}],
-  ['link', { rel: "manifest", href: "/assets/favicons/site.webmanifest"}],
-  ['link', { rel: "mask-icon", href: "/assets/favicons/safari-pinned-tab.svg", color: "#3a0839"}],
-  ['link', { rel: "shortcut icon", href: "/assets/favicons/favicon.ico"}],
+  ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png"}],
+  ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"}],
+  ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png"}],
+  ['link', { rel: "manifest", href: "/site.webmanifest"}],
+  ['link', { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#3a0839"}],
+  ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
   ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
-  ['meta', { name: "msapplication-config", content: "/assets/favicons/browserconfig.xml"}],
+  ['meta', { name: "msapplication-config", content: "/browserconfig.xml"}],
   ['meta', { name: "theme-color", content: "#ffffff"}],
 ],
-  ```
+```
 
 The changes are in this [commit](https://github.com/JibranKalia/personal-website/commit/9195419f828d50d1c921a9479226f7e03c1f1a51).
 
