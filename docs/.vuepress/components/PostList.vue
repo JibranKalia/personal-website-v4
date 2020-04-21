@@ -17,7 +17,6 @@ export default {
           let a_date = a.frontmatter.date || a.lastUpdated;
           return new Date(b_date) - new Date(a_date)
         });
-      debugger;
       return posts;
     }
   }
