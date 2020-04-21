@@ -23,11 +23,22 @@ module.exports = {
       { text: 'Github', link: 'https://github.com/jibrankalia' },
     ]
   },
-  plugins: {
-    'sitemap': {
-      hostname: 'https://jibrankalia.com'
-    },
-    '@vuepress/last-updated': true,
-  }
+  plugins: [
+    [
+      'sitemap',
+      {
+        hostname: 'https://jibrankalia.com'
+      },
+    ],
+    '@vuepress/last-updated',
+    [
+      'vuepress-plugin-clean-urls',
+      {
+        normalSuffix: '',
+        indexSuffix: '/',
+        notFoundPath: '/404.html',
+      },
+    ]
+  ],
 }
 
