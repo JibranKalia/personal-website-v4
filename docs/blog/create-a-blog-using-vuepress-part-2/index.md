@@ -21,7 +21,7 @@ $accentColor = #007acc
 
 Furthermore, I wanted to remove this svg on all outbound links:
 
-![Outbound Link SVG](./resources/9b2903d52144722556efb2cde6a92ADB.png)
+![Outbound_link.png](./resources/outbound_link.png)
 
 A simple inspect showed me that is was being set by this:
 ```css
