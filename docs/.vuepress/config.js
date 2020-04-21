@@ -22,6 +22,11 @@ module.exports = {
       { text: 'ExoBrain', link: '/knowledge/' },
       { text: 'Github', link: 'https://github.com/jibrankalia' },
     ]
+  },
+  plugins: {
+    'sitemap': {
+      hostname: 'https://jibrankalia.com'
+    },
   }
 }
 
