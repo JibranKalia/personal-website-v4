@@ -5,8 +5,10 @@
       <router-link :to="post.path">{{title}} </router-link>
     </h3>
     <p>
-      {{description}}
-      <br />
+      <template v-if="description">
+        {{description}}
+        <br />
+      </template>
     </p>
     <hr />
   </div>
@@ -16,13 +18,22 @@ export default {
   props: { post: Object },
   computed: {
     title() {
-      return this.post.frontmatter.title;
+      console.log("this.post: ", this.post);
+      if (this.post.frontmatter && this.post.frontmatter.title) {
+        return this.post.frontmatter.title;
+      } else {
+        return this.post.title;
+      }
     },
     description() {
       return this.post.frontmatter.description;
     },
     updatedAt() {
-      return new Date(this.post.frontmatter.date).toDateString();
+      if (this.post.frontmatter && this.post.frontmatter.date) {
+        return new Date(this.post.frontmatter.date).toDateString();
+      } else {
+        return this.post.lastUpdated;
+      }
     },
   },
 }
