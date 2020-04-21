@@ -30,15 +30,7 @@ module.exports = {
         hostname: 'https://jibrankalia.com'
       },
     ],
-    '@vuepress/last-updated',
-    [
-      'vuepress-plugin-clean-urls',
-      {
-        normalSuffix: '',
-        indexSuffix: '/',
-        notFoundPath: '/404.html',
-      },
-    ]
+    '@vuepress/last-updated'
   ],
 }
 
