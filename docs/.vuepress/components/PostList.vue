@@ -13,8 +13,11 @@ export default {
       const posts = this.$site.pages
         .filter(p => p.path && p.path.startsWith(path) && p.path !== path)
         .sort((a, b) => {
-          return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+          let b_date = b.frontmatter.date || b.lastUpdated;
+          let a_date = a.frontmatter.date || a.lastUpdated;
+          return new Date(b_date) - new Date(a_date)
         });
+      debugger;
       return posts;
     }
   }
