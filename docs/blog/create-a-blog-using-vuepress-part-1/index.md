@@ -1,16 +1,16 @@
 ---
 title: Create a blog using VuePress (Part 1)
 date: "2020-04-20T15:32:33.874Z"
-description: My experience using VuePress to create a blog
+description: My experience using VuePress to create a blog - Part 1
 state: editing
 tags:
   - Vue.js
   - VuePress
   - Blog
 ---
+# Create a blog using VuePress (Part 1)
 
-
-# Background
+## Background
 
 After checking out Paul Copplestone's [awesome website](https://paul.copplest.one/), I decided I wanted to build my own blog using [VuePress](https://vuepress.vuejs.org/) as well.
 
@@ -305,7 +305,7 @@ p {
 Firstly, this component recieves a `post` object as a prop as seen here: `props: { post: Object }`. It then uses [router link](https://router.vuejs.org/api/#router-link) instead of `a` tag to link to the actual post. Router Link uses Vue Router under the hood thereby avoiding a full page refresh. Finally, `<style scoped>` which uses Vue's [Scoped CSS](https://vue-loader.vuejs.org/guide/scoped-css.html#scoped-css) feature transforms the css to be scoped to this particular component.
 
 I also modified the existing `PostList` component to use `PostDetail` instead:
-```
+```vue
 // .vuepress/components/PostList.vue
 
 <template>
@@ -337,7 +337,7 @@ This is what the final output looks like:
 
 ![post_detail.png](./resources/3EFD775FFCEA20DFB1AB86A72A1F8988.png)
 
-Continued in [Part 2]() of this series.
+Continued in [Part 2](../create-a-blog-using-vuepress-part-2) of this series.
 
 
 
