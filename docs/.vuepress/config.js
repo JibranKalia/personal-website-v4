@@ -25,12 +25,16 @@ module.exports = {
   },
   plugins: [
     [
-      'sitemap',
-      {
+      'sitemap', {
         hostname: 'https://jibrankalia.com'
       },
     ],
-    '@vuepress/last-updated'
+    '@vuepress/last-updated',
+    [
+      '@vuepress/search', {
+        searchMaxSuggestions: 10
+      }
+    ]
   ],
 }
 
