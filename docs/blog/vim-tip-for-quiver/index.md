@@ -10,18 +10,18 @@ tags:
 
 # Vim tip for Quiver
 
-#### Navigating wrapped lines using Vim
+### Navigating wrapped lines using Vim
 
 I was finding myself struggling to navigate between long wrapped lines in Quiver using Vim's `j` and `k` commands. Text, as opposed to code, can have long physical lines. I could break them up by add a line break after every period but that feels strange. While perusing the Quiver wiki I landed on the [Vim section](https://github.com/HappenApps/Quiver/wiki/Vim). There was my answer:
 > Quiver has line wrapping turned on by default (src). To get j and k working normally, either use `:set nowrap` or `:map j gj` and `:map k gk`.
 
 I applied the keymap and it worked beautifully. I also learned about Vim's `gj` option for the first time. Here is the [documenation](https://vim.fandom.com/wiki/Move_cursor_by_display_lines_when_wrapping) if you are interested.
 
-#### AppleScript
+### AppleScript
 
 The next problem was that the map commands were not being persisted. At every restart, I would have to retype `:map j gj` and `:map k gk`. The docs came in handy again and pointed me to this [applescript](https://github.com/YangVincent/dotfiles/blob/master/quiver/Quiver.scpt). The script would programmatically open Quiver and type in those commands. I modified the script to [my preferences](https://github.com/JibranKalia/dotfiles/blob/9782384c4166a03e6ec0b44690970b92911b3b31/quiver/Quiver.scpt). Gave it the correct access permissions for an executable via `chmod 755 Quiver.sh` and ran it.
 
-#### Accessability Permissions
+### Accessability Permissions
 
 I got the following error:
 `execution error: System Events got an error: osascript is not allowed to send keystrokes. (1002)`.
@@ -59,7 +59,7 @@ tell application "System Events"
 end tell
 ```
 
-#### Handy Alias
+### Handy Alias
 
 The last step was to add an alias so I don't have to remember the full file path to the script. I added this to my `.zshrc`:
 ```shell
