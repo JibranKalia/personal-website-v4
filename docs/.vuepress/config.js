@@ -1,6 +1,27 @@
 module.exports = {
   title: "Jibran Kalia",
   description: 'Just playing around',
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        dateOptions: {
+          year: 'numeric', month: 'long', day: 'numeric'
+        }
+      }
+    ],
+    [
+      '@vuepress/search', {
+        searchMaxSuggestions: 10
+      },
+    ],
+    [
+      '@vuepress/search',
+      {
+        hostname: 'https://jibrankalia.com'
+      }
+    ]
+  ],
   dest: 'public',
   evergreen: true,
   head: [
@@ -22,15 +43,6 @@ module.exports = {
       { text: 'ExoBrain', link: '/knowledge/' },
       { text: 'Github', link: 'https://github.com/jibrankalia' },
     ]
-  },
-  plugins: {
-    '@vuepress/last-updated': true,
-    '@vuepress/search': {
-      searchMaxSuggestions: 10
-    },
-    'sitemap': {
-      hostname: 'https://jibrankalia.com'
-    },
   }
 }
 

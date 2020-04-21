@@ -29,7 +29,7 @@ export default {
     },
     updatedAt() {
       if (this.post.frontmatter && this.post.frontmatter.date) {
-        return new Date(this.post.frontmatter.date).toDateString();
+        return new Date(this.post.frontmatter.date).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
       } else {
         return this.post.lastUpdated;
       }
