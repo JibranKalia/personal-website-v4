@@ -18,7 +18,6 @@ export default {
   props: { post: Object },
   computed: {
     title() {
-      console.log("this.post: ", this.post);
       if (this.post.frontmatter && this.post.frontmatter.title) {
         return this.post.frontmatter.title;
       } else {
