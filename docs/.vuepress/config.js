@@ -13,6 +13,7 @@ module.exports = {
     ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
     ['meta', { name: "msapplication-config", content: "/assets/favicons/browserconfig.xml"}],
     ['meta', { name: "theme-color", content: "#ffffff"}],
+    ['script', { async: true, defer: true, "data-domain": "jibrankalia.com", src: "https://plausible.io/js/plausible.js" }],
   ],
   themeConfig: {
     nav: [
@@ -23,3 +24,4 @@ module.exports = {
     ]
   }
 }
+

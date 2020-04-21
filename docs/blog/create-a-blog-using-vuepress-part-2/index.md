@@ -48,7 +48,7 @@ This was the result:
 
 The last thing I wanted to achieve was to order the posts in reverse chronological order. I modified our original `PostList` Vue component to add a sort function:
 
-```js
+```js{6-8}
 computed: {
   posts() {
     const path = this.$page.path
