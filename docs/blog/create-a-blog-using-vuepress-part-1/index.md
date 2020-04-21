@@ -100,7 +100,7 @@ After that, I put filled out the `.vuepress/index.md` with some personal details
 ## Favicons
 
 I then wanted to add favicons to my website. I had made a simple one using this [Favicon Generator](https://favicon.io/).
-At the the root of the repository I created the appropriate file for favicons using `mkdir -p docs/.vuepress/public/assets/favicon`. I then copied the favicons into that folder. Finally, I updated the `.vuepress/config.js` file with the path to the favicons:
+At the the root of the repository I created the appropriate file for favicons using `mkdir -p docs/.vuepress/assets/favicon`. I then copied the favicons into that folder. Finally, I updated the `.vuepress/config.js` file with the path to the favicons:
 ```js
 // docs/.vuepress/config.js
 

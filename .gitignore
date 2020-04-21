@@ -6,4 +6,3 @@ node_modules/
 .deploy*/
 src/_drafts
 package-lock.json
-public
