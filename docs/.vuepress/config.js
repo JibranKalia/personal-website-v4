@@ -27,6 +27,7 @@ module.exports = {
     'sitemap': {
       hostname: 'https://jibrankalia.com'
     },
+    '@vuepress/last-updated': true,
   }
 }
 
