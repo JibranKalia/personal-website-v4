@@ -15,6 +15,7 @@ Continued from [Part 1](../create-a-blog-using-vuepress-part-1).
 ## Custom CSS
 
 The next step is to modify the theme of the blog slightly. To do that, I created `.vuepress/styles/palette.styl` file:
+
 ```styl
 $accentColor = #007acc
 ```
@@ -24,6 +25,7 @@ Furthermore, I wanted to remove this svg on all outbound links:
 ![Outbound_link.png](./resources/outbound_link.png)
 
 A simple inspect showed me that is was being set by this:
+
 ```css
 .icon.outbound {
   color: #aaa;
@@ -35,6 +37,7 @@ A simple inspect showed me that is was being set by this:
 ```
 
 In order to hide that svg using CSS I created `.vuepress/styles/index.styl` file:
+
 ```styl
 .outbound
   display:none !important
@@ -63,6 +66,7 @@ computed: {
 ```
 
 ## Deploying to Zeit Now
+
 Finally, it was time to deploy my blog. For that, I used [ZEIT](https://zeit.co/). I [connected](https://zeit.co/import/git?tab=github) ZEIT to my GitHub account and pointed it to the correct repo. I then filled the following options:
 
 ![zeit_now.png](./resources/3D8EA958B09B68EF30E993B780A4EE31.png)

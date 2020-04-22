@@ -8,14 +8,15 @@ tags:
   - VuePress
   - Blog
 ---
+
 # Create a blog using VuePress (Part 1)
 
 ## Background
 
 After checking out Paul Copplestone's [awesome website](https://paul.copplest.one/), I decided I wanted to build my own blog using [VuePress](https://vuepress.vuejs.org/) as well.
 
-
 ## Installing VuePress
+
 I started by following the instructions on the VuePress [Getting Started](https://vuepress.vuejs.org/guide/getting-started.html#getting-started) page.
 
 ```shell
@@ -58,6 +59,7 @@ The package.json should now look like:
 ```
 
 Finally, I added a few helper scripts to run the `dev` and `build` commands using yarn.
+
 ```js
 "scripts": {
   "docs:dev": "vuepress dev docs",
@@ -66,6 +68,7 @@ Finally, I added a few helper scripts to run the `dev` and `build` commands usin
 ```
 
 Before I committed the changes I added a Vue.js tailored `.gitignore` file:
+
 ```shell
 curl -O https://raw.githubusercontent.com/vuejs/vuejs.org/master/.gitignore
 ```
@@ -123,6 +126,7 @@ The changes are in this [commit](https://github.com/JibranKalia/personal-website
 ## Navbar links
 
 The next step was to add some top level nav links to quickly allow navigations to all parts of the website easily. It was as easy as adding the following to the config.js file:
+
 ```js
 // docs/.vuepress/config.js
 
@@ -146,6 +150,7 @@ The next step was moving my existing blogs over from my previous Gatsby website.
 I was able to display my blogs on `http://localhost:8080/blog/tla-plus/` for example. However, the base route `http://localhost:8080/blog` did not show the individual blog titles.
 
 I could display the titles like so:
+
 ```md
 //blog/index.md
 [TLA+](/blog/tla-plus)
@@ -176,6 +181,7 @@ export default {
 ```
 
 I then added that component it in the `index.md` file in the blog folder:
+
 ```md
 // docs/blog/index.md
 
@@ -184,6 +190,7 @@ I then added that component it in the `index.md` file in the blog folder:
 ```
 
 This was the resulting truncated json:
+
 ```json
 {
   "title": "Jibran Kalia",
@@ -306,6 +313,7 @@ p {
 Firstly, this component recieves a `post` object as a prop as seen here: `props: { post: Object }`. It then uses [router link](https://router.vuejs.org/api/#router-link) instead of `a` tag to link to the actual post. Router Link uses Vue Router under the hood thereby avoiding a full page refresh. Finally, `<style scoped>` which uses Vue's [Scoped CSS](https://vue-loader.vuejs.org/guide/scoped-css.html#scoped-css) feature transforms the css to be scoped to this particular component.
 
 I also modified the existing `PostList` component to use `PostDetail` instead:
+
 ```vue
 // .vuepress/components/PostList.vue
 
@@ -339,8 +347,3 @@ This is what the final output looks like:
 ![post_detail.png](./resources/3EFD775FFCEA20DFB1AB86A72A1F8988.png)
 
 Continued in [Part 2](../create-a-blog-using-vuepress-part-2) of this series.
-
-
-
-
-
