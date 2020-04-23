@@ -3,7 +3,7 @@ tags:
   - VSCode
 ---
 
-# Multiline Search in Vsode
+# Multiline Search in VSCode
 
 Multiline Search between two words: `select` and `error`
 
