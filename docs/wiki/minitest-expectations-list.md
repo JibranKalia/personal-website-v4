@@ -4,7 +4,7 @@ tags:
   - Ruby
 ---
 
-# Minitest Expeactions List
+# Minitest Expectations List
 
 [Expectations Source Code](https://github.com/seattlerb/minitest/blob/master/lib/minitest/expectations.rb)
 
