@@ -1,5 +1,4 @@
 ---
-TLA Plus
 date: "2018-12-25T06:00:00.000Z"
 description: Brief exploration into TLA Plus
 state: published

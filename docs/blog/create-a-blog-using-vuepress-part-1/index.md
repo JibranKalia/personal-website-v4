@@ -1,5 +1,4 @@
 ---
-Create a blog using VuePress (Part 1)
 date: "2020-04-20T15:32:33.874Z"
 description: My experience using VuePress to create a blog - Part 1
 state: editing
