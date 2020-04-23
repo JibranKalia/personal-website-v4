@@ -17,7 +17,9 @@ Here is a simple nesting example that works in SASS:
 .parent {
   .child {}
 }
+
 ```
+
 Which is compiled to in css:
 
 ```css
@@ -30,7 +32,9 @@ What about when we use an `&`
 .first-parent {
   &.second-parent {}
 }
+
 ```
+
 Which is compiled to in css:
 
 ```css
@@ -38,7 +42,6 @@ Which is compiled to in css:
 ```
 
 The difference between the two is that in the second example we are selecting an element that has **both** classes: `first-parent` and `second parent`.
-
 
 I like to think of `&` as copying the parent selector and pasting it next to the child selector. This gets interesting when used along with [BEM CSS Methodology— Block Element Modifier](http://getbem.com/introduction/). More on that later.
 
