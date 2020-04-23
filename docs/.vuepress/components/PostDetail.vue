@@ -18,11 +18,7 @@ export default {
   props: { post: Object },
   computed: {
     title() {
-      if (this.post.frontmatter && this.post.frontmatter.title) {
-        return this.post.frontmatter.title;
-      } else {
-        return this.post.title;
-      }
+      return this.post.title;
     },
     description() {
       return this.post.frontmatter.description;

@@ -1,5 +1,5 @@
 ---
-title: Note taking in Quiver
+Note taking in Quiver
 date: "2020-04-04T15:34:24.481Z"
 description: My experience using Quiver for writing and note taking
 state: published

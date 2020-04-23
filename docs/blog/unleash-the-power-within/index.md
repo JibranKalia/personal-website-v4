@@ -1,5 +1,5 @@
 ---
-title: Why I want to attend Unleash the Power Within
+Why I want to attend Unleash the Power Within
 date: "2018-09-09T05:00:00.000Z"
 description: Brief writeup on what I hope to achieve by attending UPW
 state: published
