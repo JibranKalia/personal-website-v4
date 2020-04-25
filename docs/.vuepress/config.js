@@ -29,7 +29,11 @@ module.exports = {
     ['script', { async: true, defer: true, "data-domain": "jibrankalia.com", src: "https://plausible.io/js/plausible.js" }],
   ],
   themeConfig: {
+    repo: 'JibranKalia/personal-website-v4',
     lastUpdated: 'Last Modified',
+    docsDir: 'docs',
+    editLinks: true,
+    editLinkText: 'Edit this page on GitHub',
     nav: [
       // Normal Links
       { text: 'Blog', link: '/blog/' },
