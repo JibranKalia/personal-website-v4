@@ -3,14 +3,6 @@ module.exports = {
   description: 'Just playing around',
   plugins: [
     [
-      '@vuepress/last-updated',
-      {
-        dateOptions: {
-          year: 'numeric', month: 'long', day: 'numeric'
-        }
-      }
-    ],
-    [
       '@vuepress/search', {
         searchMaxSuggestions: 10
       },
@@ -37,6 +29,7 @@ module.exports = {
     ['script', { async: true, defer: true, "data-domain": "jibrankalia.com", src: "https://plausible.io/js/plausible.js" }],
   ],
   themeConfig: {
+    lastUpdated: 'Last Modified',
     nav: [
       // Normal Links
       { text: 'Blog', link: '/blog/' },
