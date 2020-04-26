@@ -39,7 +39,6 @@ module.exports = {
       { text: 'Blog', link: '/blog/' },
       { text: 'Wiki', link: '/wiki/' },
       { text: 'Today I Learned', link: '/today-I-learned/' },
-      { text: 'Github', link: 'https://github.com/jibrankalia' },
     ]
   }
 }
