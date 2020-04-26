@@ -2,10 +2,4 @@
 
 Things I found useful but don't warrant a whole blogpost.
 
-Inspired by:
-
-[Josh Branchaud](https://github.com/jbranchaud/til)
-
-[thoughtbot](https://github.com/thoughtbot/til)
-
 <post-list />
