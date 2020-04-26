@@ -1,5 +1,5 @@
-# ExoBrain
+# Wiki
 
-My attempt at a personal knowledge repository.
+My personal wiki.
 
 <post-list />

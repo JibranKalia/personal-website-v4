@@ -37,7 +37,8 @@ module.exports = {
     nav: [
       // Normal Links
       { text: 'Blog', link: '/blog/' },
-      { text: 'ExoBrain', link: '/wiki/' },
+      { text: 'Wiki', link: '/wiki/' },
+      { text: 'Today I Learned', link: '/today-I-learned/' },
       { text: 'Github', link: 'https://github.com/jibrankalia' },
     ]
   }
