@@ -14,3 +14,13 @@ A loopback address is a reserved IP address that sends outgoing signals back to 
 ## IPv6
 
 0000:0000:0000:0000:0000:0000:0000:0001 and its permutations.
+
+### Regex
+
+A good regex to filter those loopback addresses out:
+
+```regex
+  ^localhost$|^127(?:\.[0-9]+){0,2}\.[0-9]+$|^(?:0*\:)*?:?0*1$
+```
+
+[Source](https://stackoverflow.com/questions/8426171/what-regex-will-match-all-loopback-addresses)
