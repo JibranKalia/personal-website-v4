@@ -2,7 +2,7 @@
 
 Things I found useful but don't warrant a whole blogpost.
 
-## Notable TIL's
+Inspired by:
 
 [Josh Branchaud](https://github.com/jbranchaud/til)
 
