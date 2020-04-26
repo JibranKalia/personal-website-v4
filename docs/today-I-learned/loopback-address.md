@@ -13,4 +13,4 @@ A loopback address is a reserved IP address that sends outgoing signals back to 
 
 ## IPv6
 
-0000:0000:0000:0000:0000:0000:0000:0001 and its perfumtations.
+0000:0000:0000:0000:0000:0000:0000:0001 and its permutations.
