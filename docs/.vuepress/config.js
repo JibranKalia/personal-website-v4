@@ -2,6 +2,7 @@ module.exports = {
   title: "Jibran Kalia",
   description: 'Just playing around',
   plugins: [
+    require('./test-plugin.js'),
     [
       '@vuepress/search', {
         searchMaxSuggestions: 10
@@ -30,7 +31,7 @@ module.exports = {
   ],
   themeConfig: {
     repo: 'JibranKalia/personal-website-v4',
-    lastUpdated: 'Last Modified',
+    // lastUpdated: 'Last Modified',
     docsDir: 'docs',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
