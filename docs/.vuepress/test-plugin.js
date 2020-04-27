@@ -24,6 +24,7 @@ function getGitLastUpdatedTimeStamp (filePath) {
   console.log("Base Name", path.basename(filePath));
   let lastUpdated
   try {
+    console.log("HERE", spawn.sync( 'git', ['log', '-1', '--format=%at', path.basename(filePath)], { cwd: path.dirname(filePath) }).stdout.toString('utf-8'));
     lastUpdated = parseInt(spawn.sync(
       'git',
       ['log', '-1', '--format=%at', path.basename(filePath)],
