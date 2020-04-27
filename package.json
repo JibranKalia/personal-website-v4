@@ -9,5 +9,9 @@
   },
   "engines": {
     "node": "12.x"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.2",
+    "path": "^0.12.7"
   }
 }
