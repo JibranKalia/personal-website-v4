@@ -4,8 +4,6 @@ const spawn = require('cross-spawn')
 module.exports = (options = {}, context) => ({
   extendPageData ($page) {
     const { transformer, dateOptions } = options
-    console.log("Page", $page);
-    console.log("Page Filepath", $page._filePath);
     const timestamp = getGitLastUpdatedTimeStamp($page._filePath)
     const $lang = $page._computed.$lang
     if (timestamp) {
@@ -23,6 +21,7 @@ function defaultTransformer (timestamp, lang, dateOptions) {
 
 function getGitLastUpdatedTimeStamp (filePath) {
   console.log("Filepath", filePath);
+  console.log("Base Name", path.basename(filePath));
   let lastUpdated
   try {
     lastUpdated = parseInt(spawn.sync(
