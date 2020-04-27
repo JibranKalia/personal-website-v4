@@ -22,6 +22,8 @@ function defaultTransformer (timestamp, lang, dateOptions) {
 function getGitLastUpdatedTimeStamp (filePath) {
   console.log("Filepath", filePath);
   console.log("Base Name", path.basename(filePath));
+  console.log("Dirname", path.dirname(filePath));
+
   let lastUpdated
   try {
     console.log("HERE", spawn.sync( 'git', ['log', '-1', '--format=%at', path.basename(filePath)], { cwd: path.dirname(filePath) }).stdout.toString('utf-8'));
