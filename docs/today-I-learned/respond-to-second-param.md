@@ -3,10 +3,7 @@ tags:
   - Ruby
 ---
 
-<!-- markdownlint-disable MD026 -->
-# Ruby respond_to?
-<!-- markdownlint-enable MD026 -->
-
+# Ruby respond_to? function
 
 `respond_to?` takes a second pramater. If the second parameter is `true` then public and private methods are also serached.
 
