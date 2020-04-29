@@ -1,5 +1,5 @@
 ---
-date: "2020-04-04T15:34:24.481Z"
+created_at: "2020-04-29T18:16:07.328Z"
 description: My experience using VuePress to create a blog -- Part 3
 tags:
   - Vue.js

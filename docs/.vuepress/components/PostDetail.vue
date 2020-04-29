@@ -24,8 +24,8 @@ export default {
       return this.post.frontmatter.description;
     },
     updatedAt() {
-      if (this.post.frontmatter && this.post.frontmatter.date) {
-        return new Date(this.post.frontmatter.date).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      if (this.post.frontmatter && this.post.frontmatter.created_at) {
+        return new Date(this.post.frontmatter.created_at).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
       } else {
         return this.post.lastUpdated;
       }
