@@ -9,7 +9,7 @@ export default {
   components: { PostDetail},
   computed: {
     posts() {
-      console.log("This Site:", this.$site);
+      console.log("This Site:", JSON.stringify(this.$site, null, 2));
       const path = this.$page.path
       const posts = this.$site.pages
         .filter(p => p.path && p.path.startsWith(path) && p.path !== path)
