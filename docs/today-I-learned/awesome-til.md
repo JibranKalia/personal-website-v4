@@ -3,7 +3,7 @@ tags:
   - meta
 ---
 
-# Other Awesome Today I Leanred collections
+# Other Awesome Collections
 
 [Josh Branchaud](https://github.com/jbranchaud/til)
 
