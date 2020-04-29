@@ -71,3 +71,5 @@ Finally, it was time to deploy my blog. For that, I used [ZEIT](https://zeit.co/
 ![zeit_now.png](./resources/3D8EA958B09B68EF30E993B780A4EE31.png)
 
 and voila my website is live!
+
+Continued in [Part 3](../create-a-blog-using-vuepress-part-3) of this series.
