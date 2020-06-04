@@ -1,5 +1,5 @@
 ---
-created_at: "2018-09-09T05:00:00.000Z"
+created_at: "2020-06-04T20:25:45.175Z"
 description: Improving old code
 state: draft
 tags:
@@ -73,7 +73,29 @@ With just a little bit of metaprogramming the code is clearer with significanlty
 This initalize is slightly different then the original. The original expected seperated arugments:
 `TopModule::NestedClass.new(value_1, value_2 ...)`
 
-The main disadvantage of this style is that order matters. When the arguments are few this is not a problem however,
+The main disadvantage of this style is that order matters. When the arguments are few this is not a problem. However, when there is a greater number of arugments it is very easy to misorder the values.
 
+In the newer version the values can be passed as a hash or via keyword arguments:
+`TopModule::NestedClass.new(param_a: value_1, param_b: value_2 ...)`.
 
-The first loop
+The double splat `**` operator is used to destructure a hash. Using [Hash#slice](https://ruby-doc.org/core-2.5.0/Hash.html#method-i-slice) method I ensure that only the correct keys are used.
+
+## Metaprogramming
+
+The last bit is to actually set the passed in values as instance variables. This is achieved using [instance_variable_set](https://ruby-doc.org/core-2.7.1/Object.html#method-i-instance_variable_set) method. This allows us to use variable as the instance varaible name. For example if I want to set `@param_a` I could:
+
+`@param_a = value_1`
+
+or I can:
+
+`instance_variable_set(@:param_a, value_1)`
+
+The benefit of the later is that a variable can be used for example:
+
+```ruby
+instance_variable_name = 'testing'
+
+instance_variable_set("@#{instance_variable_name.to_sym}", value_1)
+```
+
+Hope you found this useful. Thanks.
