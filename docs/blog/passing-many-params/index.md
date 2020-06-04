@@ -1,6 +1,6 @@
 ---
 created_at: "2020-06-04T20:25:45.175Z"
-description: Improving old code
+description: Improving old code that I had written
 state: draft
 tags:
   - ruby
