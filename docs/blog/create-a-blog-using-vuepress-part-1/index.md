@@ -72,8 +72,6 @@ Before I committed the changes I added a Vue.js tailored `.gitignore` file:
 curl -O https://raw.githubusercontent.com/vuejs/vuejs.org/master/.gitignore
 ```
 
-This is what the [file directory](https://github.com/JibranKalia/personal-website/tree/86604298a74d41945ab3ac75bdbdb38bcea3b0a5) looks like at this point.
-
 ## Configuration
 
 I then setup the `.vuepress` file based on the [official docs](https://vuepress.vuejs.org/guide/basic-config.html#config-file):
@@ -97,8 +95,6 @@ After that, I put filled out the `.vuepress/index.md` with some personal details
 
 ![configuration.png](./resources/42D36340AF8FE7B490A4B85C2E3856BF.png)
 
-[code](https://github.com/JibranKalia/personal-website/tree/7d32bccbf74da98a1d4760e808ce00a404de1eb5)
-
 ## Favicons
 
 I then wanted to add favicons to my website. I had made a simple one using this [Favicon Generator](https://favicon.io/).
@@ -119,8 +115,6 @@ head: [
   ['meta', { name: "theme-color", content: "#ffffff"}],
 ],
 ```
-
-The changes are in this [commit](https://github.com/JibranKalia/personal-website/commit/9195419f828d50d1c921a9479226f7e03c1f1a51).
 
 ## Navbar links
 
@@ -144,7 +138,7 @@ Here is the end result:
 
 ## Moving blog posts over
 
-The next step was moving my existing blogs over from my previous Gatsby website. That was a simple copy-paste from my gatsby directory. Here is the [commit](https://github.com/JibranKalia/personal-website/commit/33aafe957cc17759d9e0620fcbda210bf0da82a9). Note that `README.md` can also be called `index.md` to achieve the same effect.
+The next step was moving my existing blogs over from my previous Gatsby website. That was a simple copy-paste from my gatsby directory.. Note that `README.md` can also be called `index.md` to achieve the same effect.
 
 I was able to display my blogs on `http://localhost:8080/blog/tla-plus/` for example. However, the base route `http://localhost:8080/blog` did not show the individual blog titles.
 
