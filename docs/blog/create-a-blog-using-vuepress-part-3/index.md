@@ -29,6 +29,8 @@ I added it to [head option](https://vuepress.vuejs.org/config/#head) in config.j
 
 [Source](https://medium.com/@lassiuosukainen/how-to-include-a-script-tag-on-a-vue-component-fe10940af9e8)
 
+Note: I have since turned Google Analytics back on for this website.
+
 ## SiteMap
 
 I also wanted to add a sitemap that I can submit to Google for better SEO. Therefore, I added the sitemap plugin:

@@ -2,17 +2,10 @@ module.exports = {
   title: "Jibran Kalia",
   description: 'Just playing around',
   plugins: [
-    [
-      '@vuepress/search', {
-        searchMaxSuggestions: 10
-      },
-    ],
-    [
-      '@vuepress/search',
-      {
-        hostname: 'https://jibrankalia.com'
-      }
-    ]
+    [ '@vuepress/search', { searchMaxSuggestions: 10 }, ],
+    [ '@vuepress/search', { hostname: 'https://jibrankalia.com' } ],
+    [ '@vuepress/google-analytics', { ga: 'UA-129311280-1' }],
+
   ],
   dest: 'public',
   evergreen: true,
@@ -25,8 +18,7 @@ module.exports = {
     ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
     ['meta', { name: "msapplication-config", content: "/browserconfig.xml"}],
-    ['meta', { name: "theme-color", content: "#ffffff"}],
-    ['script', { async: true, defer: true, "data-domain": "jibrankalia.com", src: "https://plausible.io/js/plausible.js" }],
+    ['meta', { name: "theme-color", content: "#ffffff"}]
   ],
   themeConfig: {
     repo: 'JibranKalia/personal-website-v4',
