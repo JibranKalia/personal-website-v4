@@ -9,7 +9,7 @@ tags:
 
 # Reading Rodaauth's Sms Confirmation Code
 
-I recently had to implement sending SMS confirmation codes at work. Essentially, sending a text similar to: `Your authentication code is 117940`. While figuring out how to implement the verification code I came across [Rodaauth](http://rodauth.jeremyevans.net/). I couldn't of course integrate with Rodauth but I learned a lot by reading the code. Here are some highlights:
+I recently had to implement SMS confirmation codes. Essentially, it is sending an SMS message similar to: `Your authentication code is 117940`. While figuring out how to implement the verification code I came across [Rodaauth](http://rodauth.jeremyevans.net/). I couldn't of course integrate with Rodauth but I learned a lot by reading the code. Here are some highlights:
 
 ## Secure Compare
 
@@ -34,7 +34,7 @@ Rack::Utils.secure_compare(a, b)
 ActiveSupport::SecurityUtils.secure_compare(a, b)
 ```
 
-Quite simply a simple string compare is not safe from timing attacks. More details [here](https://codahale.com/a-lesson-in-timing-attacks/).
+A simple string compare is not safe from timing attack; therefore, a more advanced comparison algorithm is required. More details [here](https://codahale.com/a-lesson-in-timing-attacks/).
 
 ## Confirm code
 
@@ -52,11 +52,11 @@ There are several pieces to this:
 
 1) Using `SecureRandom` instead of `rand()`
 2) Converting the number to a string right away
-3) Adding `0` to the right if the generated is less than the required length. The implementation using rjust is very clean in my opinion.
+3) Adding `0` to the right if the generated number is less than the required length. The implementation using `rjust` is very clean in my opinion.
 
 ## Sequel::CURRENT_TIMESTAMP
 
-This was the first time I came across `Sequel::CURRENT_TIMESTAMP`. I
+This was also the first time I came across `Sequel::CURRENT_TIMESTAMP`.
 
 ```ruby
 def sms_set_code(code)
