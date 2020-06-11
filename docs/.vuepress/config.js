@@ -32,7 +32,7 @@ module.exports = {
     repo: 'JibranKalia/personal-website-v4',
     lastUpdated: 'Last Modified',
     docsDir: 'docs',
-    editLinks: false,
+    editLinks: true,
     editLinkText: 'Edit this page on GitHub',
     nav: [
       // Normal Links
