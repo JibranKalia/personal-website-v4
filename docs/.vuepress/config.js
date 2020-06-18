@@ -28,8 +28,7 @@ module.exports = {
     nav: [
       // Normal Links
       { text: 'Blog', link: '/blog/' },
-      { text: 'Wiki', link: '/wiki/' },
-      { text: 'Today I Learned', link: '/today-I-learned/' },
+      { text: 'Wiki', link: '/wiki/' }
     ]
   }
 }
