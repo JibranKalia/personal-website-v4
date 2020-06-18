@@ -3,9 +3,7 @@ module.exports = {
   description: 'Just playing around',
   plugins: [
     [ '@vuepress/search', { searchMaxSuggestions: 10 }, ],
-    [ '@vuepress/search', { hostname: 'https://jibrankalia.com' } ],
-    [ '@vuepress/google-analytics', { ga: 'UA-129311280-1' }],
-
+    [ '@vuepress/search', { hostname: 'https://jibrankalia.com' } ]
   ],
   dest: 'public',
   evergreen: true,
@@ -18,7 +16,8 @@ module.exports = {
     ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
     ['meta', { name: "msapplication-config", content: "/browserconfig.xml"}],
-    ['meta', { name: "theme-color", content: "#ffffff"}]
+    ['meta', { name: "theme-color", content: "#ffffff"}],
+    ['script', { async: true, "data-goatcounter": "https://jibrankalia.goatcounter.com/count", src: "//gc.zgo.at/count.js" }],
   ],
   themeConfig: {
     repo: 'JibranKalia/personal-website-v4',
