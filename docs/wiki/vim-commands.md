@@ -1,3 +1,8 @@
+---
+tags:
+  - Vim
+---
+
 # Vim Commands
 
 List of Vim commands that I don't use very frequently. Hence they need to be in a wiki for quick lookup:
