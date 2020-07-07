@@ -1,6 +1,5 @@
 ---
 created_at: "2020-07-06T11:01:00.000Z"
-description: "Useful Github Shortcuts"
 state: "done"
 tags:
   - Github
