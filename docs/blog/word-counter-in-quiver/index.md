@@ -3,7 +3,7 @@ created_at: "2020-04-06T12:05:00.000Z"
 description: "Beacuse word count is important"
 state: "done"
 tags:
-  -
+  - Quiver
 ---
 
 # Word Count in Quiver
