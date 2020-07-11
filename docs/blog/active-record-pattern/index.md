@@ -15,7 +15,7 @@ It was first described by [Martin Fowler](https://www.martinfowler.com/eaaCatalo
 
 > An object that wraps a row in a database table or view, encapsulates the database access, and adds domain logic on that data.
 
-The key here is that this object has both the actual data; a distinct field in the object for every row in the SQL table. As well as the logic to access or update that data from the underlying (relational) database.
+There are two parts to this object: the actual data represented as a distinct field in the object for every column in the SQL table. And the logic to access or update that data from the underlying (relational) database.
 
 Active Record objects are tightly coupled with database tables and often have business logic that allows for interacting with said tables. However, this also means that any modifications to the objects might also require changes to the database design.
 
