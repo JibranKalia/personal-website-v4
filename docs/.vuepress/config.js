@@ -17,15 +17,13 @@ module.exports = {
     ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
     ['meta', { name: "msapplication-config", content: "/browserconfig.xml"}],
-    ['meta', { name: "theme-color", content: "#ffffff"}],
-    ['script', { async: true, "data-goatcounter": "https://jibrankalia.goatcounter.com/count", src: "//gc.zgo.at/count.js" }],
+    ['meta', { name: "theme-color", content: "#ffffff"}]
   ],
   themeConfig: {
     repo: 'JibranKalia/personal-website-v4',
     lastUpdated: 'Last Modified',
     docsDir: 'docs',
-    editLinks: true,
-    editLinkText: 'Edit this page on GitHub',
+    editLinks: false,
     nav: [
       // Normal Links
       { text: 'Blog', link: '/blog/' },
