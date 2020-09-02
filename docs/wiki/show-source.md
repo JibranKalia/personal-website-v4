@@ -6,7 +6,7 @@ tags:
 # Show Source
 
 
-I had a gem that was defining a with `:failure?` method. I wanted to read the source code of that method. Instead of combing thru the gem code base I quickly did:
+I had a gem that was defining a `:failure?` method. I wanted to read the source code of that method without having to search through the entire codebase. Here is what I did:
 
 ```ruby
 show-source res.failure?
