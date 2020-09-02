@@ -3,7 +3,8 @@ module.exports = {
   description: 'Just playing around',
   plugins: [
     [ '@vuepress/search', { searchMaxSuggestions: 10 }, ],
-    [ '@vuepress/search', { hostname: 'https://jibrankalia.com' } ]
+    [ '@vuepress/search', { hostname: 'https://jibrankalia.com' } ],
+    [ '@vuepress/google-analytics', { 'ga': 'UA-129311280-1' } ]
   ],
   dest: 'public',
   evergreen: true,
