@@ -5,6 +5,7 @@
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "scripts": {
+    "start": "vuepress dev docs",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
