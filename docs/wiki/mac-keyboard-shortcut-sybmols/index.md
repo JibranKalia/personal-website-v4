@@ -4,7 +4,7 @@ Because I had to keep looking it up:
 
 | Modifier key | Symbol                                              |
 |--------------|-----------------------------------------------------|
-| Command      | ![command symbol](./resources/command-symbol.png)       |
+| Command      | ![command symbol](./resources/command-symbol.png)   |
 | Shift        | ![shift symbol](./resources/shift-symbol.png)       |
 | Option       | ![option symbol](./resources/option-symbol.png)     |
 | Control      | ![control symbol](./resources/control-symbol.png)   |
