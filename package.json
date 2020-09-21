@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@limdongjin/vuepress-plugin-simple-seo": "^1.0.4-alpha.5",
     "@vuepress/plugin-google-analytics": "^1.5.4",
     "vuepress": "^1.5.4",
     "vuepress-plugin-sitemap": "^2.3.1"
