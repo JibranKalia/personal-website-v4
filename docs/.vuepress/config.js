@@ -23,7 +23,7 @@ module.exports = {
     ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
     ['meta', { name: "msapplication-config", content: "/browserconfig.xml"}],
-    ['meta', { name: "theme-color", content: "#ffffff"}]
+    ['meta', { name: "theme-color", content: "#ffffff"}],
     ['meta', { name: "google-site-verification", content: "NblPLmMB4wmuwbiu0rYCsNVusPrW6-zctI7owTYzOf0" } ]
   ],
   themeConfig: {
