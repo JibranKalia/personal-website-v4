@@ -1,0 +1,12 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.wrappingIndent": "indent",
+  "editor.overviewRulerBorder": false,
+  "editor.lineHeight": 20,
+  "files.trimTrailingWhitespace": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#689F38",
+    "titleBar.inactiveBackground": "#689F38"
+  },
+}

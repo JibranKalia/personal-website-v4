@@ -2,10 +2,11 @@ module.exports = {
   title: "Jibran Kalia",
   description: 'Just playing around',
   plugins: [
+    [ 'sitemap', { hostname: 'https://jibrankalia.com' }],
     [ '@vuepress/search', { searchMaxSuggestions: 10 }, ],
     [ '@vuepress/search', { hostname: 'https://jibrankalia.com' } ],
     [ '@vuepress/google-analytics', { 'ga': 'UA-129311280-1' } ],
-    ['@limdongjin/vuepress-plugin-simple-seo', {
+    [ '@limdongjin/vuepress-plugin-simple-seo', {
       root_url: 'https://jibrankalia.com',
       default_site_name: "Jibran Kalia's Blog",
       twitter_creator: "@jibrankalia"
