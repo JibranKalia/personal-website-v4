@@ -2,7 +2,7 @@ module.exports = {
   title: "Jibran Kalia",
   description: 'Just playing around',
   plugins: [
-    [ 'sitemap', { hostname: 'https://jibrankalia.com' }],
+    [ 'sitemap', { hostname: 'https://jibrankalia.com', changefreq: 'monthly' }],
     [ '@vuepress/search', { searchMaxSuggestions: 10 }, ],
     [ '@vuepress/search', { hostname: 'https://jibrankalia.com' } ],
     [ '@vuepress/google-analytics', { 'ga': 'UA-129311280-1' } ],
