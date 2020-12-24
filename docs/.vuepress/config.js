@@ -34,7 +34,8 @@ module.exports = {
     nav: [
       // Normal Links
       { text: 'Blog', link: '/blog/' },
-      { text: 'Wiki', link: '/wiki/' }
+      { text: 'Wiki', link: '/wiki/' },
+      { text: 'Resume', link: '/resume/' }
     ]
   }
 }
