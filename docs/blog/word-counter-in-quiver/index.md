@@ -12,13 +12,13 @@ From my [previous post](../note-taking-in-quiver) you might have noticed that I 
 
 Word count is an important vanity stat and so I found a quick workaround. I mostly write in markdown so this method works well for me.
 
-Export the text as a plain note:
+Copy the note as plain text:
 
-![export as plain note](./resources/CB8BAE74EFC71798BD88044B1F99B2A5.png).
+![copy as plain note](./resources/C3A353DE066E9F6B8864C8B63A7BE736.png).
 
 That will copy the note into your clipboard. Then from the terminal run this command:
 
-`pbpase | wc -w`
+`pbpaste | wc -w`
 
 This will take the contents of the clipboard and pipe that to the [wc](https://github.com/tldr-pages/tldr/blob/master/pages/common/wc.md) and count the words.
 
